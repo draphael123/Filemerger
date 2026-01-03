@@ -1,4 +1,4 @@
-import Papa from 'papaparse';
+import Papa, { ParseError } from 'papaparse';
 import { Fact, FactSource } from '@/types/fact';
 import { getCanonicalField } from '../fieldMapping';
 import { normalizeValue } from '../normalization';
@@ -63,7 +63,7 @@ export async function parseCSV(
           reject(error);
         }
       },
-      error: (error) => {
+      error: (error: ParseError) => {
         reject(new Error(`CSV parsing error: ${error.message}`));
       },
     });
