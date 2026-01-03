@@ -1,0 +1,44 @@
+INVOICE
+
+Invoice Number: INV-2024-001
+Invoice Date: January 15, 2024
+Customer ID: CUST-001
+Customer Name: John Doe
+Email: john.doe@email.com
+Phone: (555) 123-4567
+
+Billing Address: 123 Main Street, Anytown, CA 90210
+
+ITEM DETAILS:
+Product: Premium Software License
+Quantity: 1
+Unit Price: $1,250.50
+Total Amount: $1,250.50
+
+Payment Terms: Net 30
+Due Date: February 14, 2024
+Status: Paid
+
+Notes: Thank you for your business!
+
+---
+
+This is a sample invoice file format. When saved as PDF, the parser will extract:
+- Invoice Number: INV-2024-001
+- Invoice Date: January 15, 2024
+- Customer ID: CUST-001
+- Customer Name: John Doe
+- Email: john.doe@email.com
+- Phone: (555) 123-4567
+- Total Amount: $1,250.50
+- Due Date: February 14, 2024
+- Status: Paid
+
+The system will automatically:
+1. Normalize the phone number to E.164 format
+2. Normalize dates to YYYY-MM-DD format
+3. Normalize currency to decimal format
+4. Map "Customer Name" to "full_name"
+5. Map "Email" to "email_address"
+6. Merge with matching data from CSV files
+

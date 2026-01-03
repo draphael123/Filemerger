@@ -1,0 +1,25 @@
+INVOICE DOCUMENT
+
+Invoice #: INV-2024-002
+Date: 03/22/2024
+Client ID: CUST-002
+Client Name: Jane Smith
+Email Address: jane.smith@email.com
+Contact Number: 555-234-5678
+
+Service Address: 456 Oak Avenue, Springfield, IL 62701
+
+SERVICES PROVIDED:
+Consulting Services: $890.00
+
+Payment Due: April 21, 2024
+Invoice Status: Pending
+
+---
+
+This second invoice will help demonstrate:
+- Conflict detection (different amounts if dates differ)
+- Synonym mapping (Client ID → customer_id, Client Name → full_name)
+- Multiple sources for the same customer
+- Different field naming conventions
+

@@ -1,0 +1,18 @@
+# Dependencies
+node_modules
+
+# Testing
+coverage
+__tests__
+
+# Misc
+.env*.local
+*.log
+
+# IDE
+.vscode
+.idea
+
+# Sample files (optional - remove this line if you want samples deployed)
+sample-files
+
